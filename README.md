@@ -88,7 +88,6 @@ G F <BR>
 
 <hr>
 
-<hr>
 <h3>Sample Input</h3>
 <hr>
 5 6 <BR>
