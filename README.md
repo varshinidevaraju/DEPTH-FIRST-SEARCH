@@ -1,8 +1,8 @@
 # BREADTH-FIRST-SEARCH
 <h1>ExpNo 3 : Implement Breadth First Search Traversal of a Graph</h1> 
-<h3>Name:Varshini.D  </h3>
-<h3>Register Number:212223230234</h3>
-<H3>Aim:</H3>
+<h3>Name : Varshini.D  </h3>
+<h3>Register Number : 212223230234</h3>
+<H3>Aim:</H3> 
 <p>To Implement Breadth First Search Traversal of a Graph using Python 3.</p>
 <h3>Theory:</h3>
 <p>Breadth-First Traversal (or Search) for a graph is like the Breadth-First Traversal of a tree.
