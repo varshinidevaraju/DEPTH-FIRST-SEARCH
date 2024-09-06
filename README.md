@@ -106,6 +106,7 @@ G F <BR>
 <h3>Program:</h3>
 <hr>
 ``````
+
 from collections import deque
 from collections import defaultdict
 def dfs(graph,start,visited,path):
@@ -128,6 +129,7 @@ visited=defaultdict(bool)
 path=[]
 traversedpath=dfs(graph,start,visited,path)
 print(traversedpath)
+
 ``````
 <hr>
 <h3>Result:</h3>
