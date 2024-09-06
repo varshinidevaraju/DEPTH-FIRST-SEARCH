@@ -108,25 +108,48 @@ G F <BR>
 ``````
 from collections import deque
 from collections import defaultdict
-def dfs(graph,start,visited,path):
+
+
+'''
+V E
+FOR EVERY EDGE
+U V
+7 9
+A B
+A C 
+A F
+C E
+C F
+C D
+D E 
+D G
+G F
+'''
+def bfs(graph,start,visited,path):
+    queue = deque()
     path.append(start)
-    visited[start]=True
-    for neighbour in graph[start]:
-        if visited[neighbour]==False:
-            dfs(graph,neighbour,visited,path)
-            visited[neighbour]=True
+    queue.append(start)
+    visited[start] = True
+    while len(queue) != 0:
+        tmpnode = queue.popleft()
+        for neighbour in graph[tmpnode]:
+            if visited[neighbour] == False:
+                path.append(neighbour)
+                queue.append(neighbour)
+                visited[neighbour] = True
     return path
-graph=defaultdict(list)
-n,e=map(int,input().split())
+
+graph = defaultdict(list)
+v,e = map(int,input().split())
 for i in range(e):
-    u,v=map(str,input().split())
+    u,v = map(str,input().split())
     graph[u].append(v)
     graph[v].append(u)
-#print(graph)
-start='A'
-visited=defaultdict(bool)
-path=[]
-traversedpath=dfs(graph,start,visited,path)
+
+start = 'A'
+path = []
+visited = defaultdict(bool)
+traversedpath = bfs(graph,start,visited,path)
 print(traversedpath)
 ``````
 
